@@ -1,0 +1,26 @@
+/* File: project.ejs
+Student: Adewale Ibrahim
+StudentID: 301515732
+Date: 2025-09-15
+*/
+
+<%- include('partials/header', { title: "Projects" }) %>
+
+    <div class="main-container">
+        <h1>My Projects</h1>
+        <div class="projects-grid">
+            <% projects.forEach(project=> { %>
+                <div class="project-card">
+                    <img src="<%= project.image %>" alt="<%= project.title %>" class="project-image" />
+                    <h2>
+                        <%= project.title %>
+                    </h2>
+                    <p>
+                        <%= project.description %>
+                    </p>
+                </div>
+                <% }) %>
+        </div>
+    </div>
+
+    <%- include('partials/footer') %>

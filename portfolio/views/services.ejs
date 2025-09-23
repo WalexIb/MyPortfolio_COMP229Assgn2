@@ -1,0 +1,31 @@
+/* File: services.ejs
+Student: Adewale Ibrahim
+StudentID: 301515732
+Date: 2025-09-15
+*/
+
+
+<%- include('partials/header', { title: "Services" }) %>
+
+    <div class="main-container">
+        <h1>My Services</h1>
+        <p class="services-intro">
+            Here are some of the services I offer to help clients bring their ideas to life.
+        </p>
+
+        <div class="services-grid">
+            <% services.forEach(function(service) { %>
+                <div class="service-card">
+                    <img src="<%= service.image %>" alt="<%= service.title %>" class="service-image" />
+                    <h2>
+                        <%= service.title %>
+                    </h2>
+                    <p>
+                        <%= service.description %>
+                    </p>
+                </div>
+                <% }) %>
+        </div>
+    </div>
+
+    <%- include('partials/footer') %>

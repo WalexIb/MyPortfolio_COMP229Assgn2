@@ -1,0 +1,28 @@
+/* File: about.ejs
+Student: Adewale Ibrahim
+StudentID: 301515732
+Date: 2025-09-15
+*/
+
+<%- include('partials/header', { title: "Aboue Me" }) %>
+
+    <div class="main-container">
+        <h1>Adewale Ibrahim</h1>
+
+        <!-- Profile Image -->
+        <img src="/images/profilephoto.jpg" alt="Adewale Ibrahim" class="profile-image" />
+
+        <p>
+            I am a motivated student currently studying <strong>Software Engineering Technology – AI</strong>.
+            I am passionate about developing innovative software solutions and exploring the possibilities of
+            artificial intelligence. I enjoy learning new technologies, building projects, and applying
+            practical skills to solve real-world problems.
+        </p>
+
+        <!-- Resume Link -->
+        <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" class="resume-link">
+            📄 View My Resume
+        </a>
+    </div>
+
+<%- include('partials/footer') %>
