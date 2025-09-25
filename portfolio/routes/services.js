@@ -14,17 +14,17 @@ router.get("/", (req, res) => {
   const services = [
     {
       title: "Web Development",
-      image: "/assets/services/webdev.jpg",
+      image: "./images/webdev.jpg",
       description: "Building responsive, modern websites using React, HTML, CSS, and JavaScript."
     },
     {
       title: "Mobile App Development",
-      image: "/assets/services/mobile.jpg",
+      image: "./images/mobile.jpg",
       description: "Designing cross-platform mobile apps with user-friendly interfaces and smooth performance."
     },
     {
       title: "AI & Software Solutions",
-      image: "/assets/services/ai.jpg",
+      image: "./images/ai.jpg",
       description: "Creating AI-driven applications, automation tools, and custom software solutions."
     }
   ];

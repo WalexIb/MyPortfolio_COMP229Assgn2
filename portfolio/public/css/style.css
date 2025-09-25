@@ -1,0 +1,143 @@
+/* File: style.css
+Student: Adewale Ibrahim
+StudentID: 301515732    
+Date: 2025-09-15
+*/
+
+/* Global styles for body, header, footer, links */
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Header & Navbar */
+/* Logo + Title container */
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* centers logo + title */
+  gap: 1rem; /* spacing between logo and title */
+  padding: 1rem;
+  background-color: #bccb63;
+  color: #fff;
+  margin-bottom: auto;
+}
+
+.logo-img {
+  height: 60px;
+  width: auto;
+  border-radius: 50%; /* makes logo circular */
+}
+
+.site-title {
+  font-size: 2rem;
+  margin: 0;
+}
+
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.navbar .logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: blue;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar .nav-links li a {
+  color: #fff;
+  padding: 0.5rem 1rem;
+  transition: background 0.3s, color 0.3s;
+}
+
+.navbar .nav-links li a:hover {
+  background-color: #fff;
+  color: #333;
+  border-radius: 5px;
+}
+
+/*Focus the active nav link*/
+.navbar .nav-links li a.active,
+.navbar .nav-links li a:focus {
+  background-color: #fff;
+  color: #333;
+  border-radius: 5px;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .navbar .nav-links {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .navbar .nav-links li {
+    width: 100%;
+  }
+  
+  .navbar .nav-links li a {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+  }
+}
+
+/* Footer */
+footer.footer {
+  background-color: #bccb63;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+  position: relative;
+  bottom: 0;
+  align-items: center;
+}
+
+footer.footer .social-links a {
+  margin: 0 0.5rem;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+footer.footer .social-links a:hover {
+  color: #ff9800;
+}
+
+/* Main container */
+.main-container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}

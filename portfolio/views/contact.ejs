@@ -1,5 +1,44 @@
-/* File: contact.ejs
+<!-- File: contact.ejs
 Student: Adewale Ibrahim
 StudentID: 301515732
-Date: 2025-09-15
-*/
+Date: 2025-09-15 -->
+
+
+<%- include('partials/header', { title: "Contact Me" }) %>
+
+<link rel="stylesheet" href="/css/contact.css">
+
+<div class="main-container">
+  <!-- Contact Info Panel -->
+  <div class="contact-info">
+    <h2>Contact Information</h2>
+    <p><strong>Name:</strong> Adewale Ibrahim</p>
+    <p><strong>Email:</strong> aibra188@my.centennialcollege.ca</p>
+    <p><strong>Phone:</strong> +1 (647) 561 4661</p>
+    <p><strong>Location:</strong> Toronto, Canada</p>
+  </div>
+
+  <!-- Contact Form -->
+  <div class="contact-form">
+    <h2>Send Me a Message</h2>
+    <form action="/contact" method="POST">
+      <div class="form-row">
+        <input type="text" name="firstName" placeholder="First Name" required />
+        <input type="text" name="lastName" placeholder="Last Name" required />
+      </div>
+
+      <div class="form-row">
+        <input type="tel" name="phone" placeholder="Contact Number" required />
+        <input type="email" name="email" placeholder="Email Address" required />
+      </div>
+
+      <textarea name="message" placeholder="Write your message..." rows="4" required></textarea>
+
+      <button type="submit" class="submit-btn">Send Message</button>
+    </form>
+  </div>
+</div>
+
+<%- include('partials/footer') %>
+
+

@@ -1,10 +1,10 @@
-/* File: header.ejs
+<!-- File: header.ejs
 Student: Adewale Ibrahim
 StudentID: 301515732
-Date: 2025-09-15
-*/
+Date: 2025-09-15 -->
 
-<!DOCTYPE html>
+
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -12,11 +12,53 @@ Date: 2025-09-15
     <title><%= title %> | My Portfolio</title>
     <link rel="stylesheet" href="/css/style.css">
 </head>
+
+<header>
+    <h1 class="site-title">My Portfolio</h1>
+    <link rel="logo" type="image/jpg" href="public/images/logo.jpj"/>
+</header>
 <body>
-    <nav>
+    <nav class="navbar">
         <a href="/">Home</a> |
         <a href="/about">About</a> |
         <a href="/projects">Projects</a> |
         <a href="/services">Services</a> |
         <a href="/contact">Contact</a>
+    </nav> -->
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="header-top">
+      <!-- Logo -->
+      <img src="/images/logo.jpg" alt="Logo" class="logo-img">
+
+      <!-- Site Title -->
+      <h1 class="site-title">Adewale Ibrahim</h1>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li>|</li>
+        <li><a href="/about">About Me</a></li>
+        <li>|</li>
+        <li><a href="/projects">Projects</a></li>
+        <li>|</li>
+        <li><a href="/services">Services</a></li>
+        <li>|</li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
     </nav>
+    </div>
+  </header>
+
+  <body>
