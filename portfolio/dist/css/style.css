@@ -84,7 +84,6 @@ a {
   color: #22223b;
   border-radius: 5px;
 }
-
 /* Responsive Navbar */
 @media (max-width: 768px) {
   .navbar {

@@ -1,0 +1,5 @@
+[
+  { "title": "Web Development", "image": "images/webdev.jpg", "description": "Building responsive websites." },
+  { "title": "Mobile App Development", "image": "images/mobile.jpg", "description": "Designing cross-platform apps." },
+  { "title": "AI & Software Solutions", "image": "images/ai.jpg", "description": "Creating AI-driven applications." }
+]

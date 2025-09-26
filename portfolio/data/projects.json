@@ -1,0 +1,5 @@
+[
+  { "title": "Auto Sales Website", "image": "images/project1.jpg", "description": "Responsive website for auto sales." },
+  { "title": "Smart Fitness App SRS", "image": "images/project2.jpg", "description": "SRS for Smart Fitness App." },
+  { "title": "Portfolio Website", "image": "images/project3.jpg", "description": "This personal portfolio site." }
+]

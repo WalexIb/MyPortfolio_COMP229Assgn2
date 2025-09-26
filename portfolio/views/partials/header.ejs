@@ -26,7 +26,7 @@ Date: 2025-09-15 -->
         <a href="/contact">Contact</a>
     </nav> -->
 
-    <!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -35,16 +35,16 @@ Date: 2025-09-15 -->
   <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-  <!-- Header -->
+ 
   <header>
     <div class="header-top">
-      <!-- Logo -->
+   
       <img src="/images/logo.jpg" alt="Logo" class="logo-img">
 
-      <!-- Site Title -->
+   
       <h1 class="site-title">Adewale Ibrahim</h1>
 
-    <!-- Navigation Bar -->
+  
     <nav class="navbar">
       <ul class="nav-links">
         <li><a href="/">Home</a></li>
@@ -61,4 +61,40 @@ Date: 2025-09-15 -->
     </div>
   </header>
 
-  <body>
+  <body>-->
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="header-top">
+      <!-- Logo -->
+      <a href="index.html" class="logo-link">
+        <img src="images/logo.jpg" alt="Logo" class="logo-img">
+        <span class="site-title">Adewale Ibrahim</span>
+      </a>
+
+      <!-- Navigation Bar -->
+      <nav class="navbar">
+        <ul class="nav-links">
+          <li><a href="index.html" class="<%= title === 'Home' ? 'active' : '' %>">Home</a></li>
+          <li>|</li>
+          <li><a href="about.html" class="<%= title === 'About Me' ? 'active' : '' %>">About Me</a></li>
+          <li>|</li>
+          <li><a href="projects.html" class="<%= title === 'Projects' ? 'active' : '' %>">Projects</a></li>
+          <li>|</li>
+          <li><a href="services.html" class="<%= title === 'Services' ? 'active' : '' %>">Services</a></li>
+          <li>|</li>
+          <li><a href="contact.html" class="<%= title === 'Contact Me' ? 'active' : '' %>">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+    <body>
