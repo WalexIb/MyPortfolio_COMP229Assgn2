@@ -1,10 +1,11 @@
 /* File: style.css
 Student: Adewale Ibrahim
 StudentID: 301515732    
-Date: 2025-09-25
+Date: 2025-09-15
 */
 
-/* Global styles */
+/* Global styles for body, header, footer, links */
+
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
@@ -20,54 +21,112 @@ a {
 }
 
 /* Header & Navbar */
+/* Logo + Title container */
 .header-top {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center; /* centers logo + title */
+  gap: 1rem; /* spacing between logo and title */
   padding: 1rem;
   background-color: #bccb63;
   color: #fff;
+  margin-bottom: auto;
 }
 
 .logo-img {
   height: 60px;
   width: auto;
-  border-radius: 50%;
+  border-radius: 50%; /* makes logo circular */
 }
 
 .site-title {
   font-size: 2rem;
-  margin: 0.5rem 0;
-  text-align: center;
+  margin: 0;
 }
 
-/* Navbar */
+/* Navbar styles */
 .navbar {
   display: flex;
-  justify-content: center;
-  width: 100%;
-  margin-top: 0.5rem;
+  justify-content: space-between;
+  align-items: right;
+  max-width: 800%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.navbar .logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: blue;
 }
 
 .navbar .nav-links {
   list-style: none;
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  padding: 0;
+  gap: 1rem;
 }
 
 .navbar .nav-links li a {
   color: #fff;
   padding: 0.5rem 1rem;
-  border-radius: 5px;
-  transition: all 0.3s ease;
+  transition: background 0.3s, color 0.3s;
 }
 
-.navbar .nav-links li a:hover,
-.navbar .nav-links li a.active {
+.navbar .nav-links li a:hover {
   background-color: #fff;
   color: #333;
+  border-radius: 5px;
+}
+
+.navbar .nav-links li a.active {
+  background-color: #e5e7eb;
+  color: #22223b;
+  border-radius: 5px;
+}
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .navbar .nav-links {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .navbar .nav-links li {
+    width: 100%;
+  }
+  
+  .navbar .nav-links li a {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+  }
+}
+
+/* Footer */
+footer.footer {
+  background-color: #bccb63;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+  position: relative;
+  bottom: 0;
+  align-items: center;
+}
+
+footer.footer .social-links a {
+  margin: 0 0.5rem;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+footer.footer .social-links a:hover {
+  color: #ff9800;
 }
 
 /* Main container */
@@ -80,110 +139,11 @@ a {
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-/* Headings & text */
-h1, h2, h3 {
-  text-align: center;
-  margin-bottom: 1rem;
-}
-
-p {
-  font-size: 1.1rem;
-  color: #4b5563;
-  line-height: 1.6;
-  max-width: 700px;
-  margin: 0.5rem auto 1rem auto;
-  text-align: center;
-}
-
-/* Buttons */
-button {
-  background-color: #bccb63;
-  color: #fff;
-  border: none;
-  padding: 0.7rem 1.5rem;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 1rem;
-  transition: background 0.3s;
-}
-
-button:hover {
-  background-color: #a0b242;
-}
-
-/* Grid sections for Projects & Services */
-.projects-grid,
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
-  margin-top: 2rem;
-}
-
-.project-card,
-.service-card {
-  background-color: #f9f9f9;
-  border-radius: 10px;
-  padding: 1rem;
-  text-align: center;
-  box-shadow: 0 3px 5px rgba(0,0,0,0.1);
-}
-
-.project-card img,
-.service-card img {
-  max-width: 100%;
-  border-radius: 10px;
-  margin-bottom: 1rem;
-}
-
-/* Footer */
-footer.footer {
-  background-color: #bccb63;
-  color: #fff;
-  text-align: center;
-  padding: 1rem 0;
-  margin-top: 2rem;
-}
-
-/* Responsive adjustments */
+/* Responsive main container */
 @media (max-width: 768px) {
-  .header-top {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .navbar {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-
-  .navbar .nav-links {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-
-  .projects-grid,
-  .services-grid {
-    grid-template-columns: 1fr;
-  }
-
   .main-container {
     margin: 1rem;
-    padding: 1rem;
+    padding: 0.5rem;
   }
-}
+} 
 
-@media (max-width: 480px) {
-  .site-title {
-    font-size: 1.5rem;
-  }
-
-  button {
-    padding: 0.5rem 1rem;
-    font-size: 0.9rem;
-  }
-
-  p {
-    font-size: 1rem;
-  }
-}
